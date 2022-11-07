@@ -8,10 +8,10 @@ const ButtonDeleteStyle = styled.button`
   cursor: pointer;
   transition: color 250ms linear, background-color 250ms linear;
 
-  &: hover {
+  /* &: hover {
     background-color: white;
     color: black;
-  }
+  } */
 `;
 
 export default ButtonDeleteStyle ;
