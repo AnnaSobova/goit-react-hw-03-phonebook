@@ -1,6 +1,7 @@
 import React from 'react';
-import Input from '../Input.styled';
+import Input from './Input.styled';
 import PropTypes from 'prop-types';
+
 const InputFilter = ({ onChange, value }) => (
   <>
     <Input
