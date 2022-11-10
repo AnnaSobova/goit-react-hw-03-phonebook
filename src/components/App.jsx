@@ -24,13 +24,20 @@ class App extends Component{
    
   formSubmitHandle = data => {
     const id = nanoid();
-    if (
-      this.state.contacts.filter(contact => contact.name === data.name).length >
-      0
-    ) {
+    // if (
+    //   this.state.contacts.filter(contact => contact.name === data.name).length >
+    //   0
+    // ) {
+    //   alert(`${data.name} is already in contacts`);
+    //   return;
+    // }
+      
+    const isExist =this.state.contacts.find(contact => contact.name === data.name)
+     if(isExist){
       alert(`${data.name} is already in contacts`);
-      return;
-    }
+        return;
+     }
+
     this.setState({
       contacts: [
         ...this.state.contacts,
